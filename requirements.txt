@@ -1,0 +1,17 @@
+# 테스트한 환경: Python 3.11.13 (Linux). Python 3.9~3.12면 된다.
+# 숫자까지 똑같이 재현하려면 아래 버전을 그대로 쓰는 게 안전하다.
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+scipy==1.13.1
+matplotlib==3.8.4
+pyarrow==16.1.0
+xgboost==2.0.3
+
+# SPADL 변환과 VAEP 공식 (ML-KULeuven/socceraction).
+# 옆 폴더에 원본 저장소를 받아 뒀다면 대신 `pip install -e ../socceraction` 을 써도 된다.
+socceraction==1.5.3
+multimethod==1.9.1        # pandera 0.17.2가 요구하는 버전 (2.x면 import부터 깨진다)
+
+koreanize-matplotlib==0.1.1   # 한글 폰트가 없는 환경에서 그림 글자가 깨지지 않게
+jupyter
